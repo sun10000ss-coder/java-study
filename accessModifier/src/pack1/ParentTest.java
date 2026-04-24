@@ -1,0 +1,17 @@
+package pack1;
+
+public class ParentTest {
+	public static void main(String[] args) {
+	Parent p = new Parent(); 
+	
+	
+	System.out.println("== 같은 패키지 테스트 ==");
+	System.out.println("public a = " + p.a);
+	System.out.println("protected b = " + p.b);
+	System.out.println("default c = " + p.c);
+	//System.out.println("private d = "+ p.d);//상속 받	은 서브 클래스에서 접근 불가
+
+	System.out.println("\n== 메서드 호출 ==");
+	p.show();
+	}
+}
